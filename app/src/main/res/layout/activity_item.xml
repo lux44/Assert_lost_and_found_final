@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ItemActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분류 : "
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/elice_regular"
+            android:id="@+id/tv_category"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/elice_regular"
+            android:layout_toRightOf="@id/tv_category"
+            android:id="@+id/tv_category_detail"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목 : "
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/elice_regular"
+            android:layout_below="@id/tv_category"
+            android:id="@+id/tv_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/elice_regular"
+            android:layout_toRightOf="@id/tv_title"
+            android:layout_below="@id/tv_category_detail"
+            android:id="@+id/tv_title_detail"/>
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="36dp"
+            android:padding="8dp" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="36dp"
+                android:layout_below="@id/tv_title"
+                android:padding="8dp"
+                android:id="@+id/iv_2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="발견 시각 : "
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/elice_regular"
+            android:layout_below="@id/iv_1"
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/elice_regular"
+            android:layout_toRightOf="@id/tv_time"
+            android:layout_below="@id/iv_1"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/tv_time_detail"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="발견 위치 : "
+            android:textColor="@color/black"
+            android:fontFamily="@font/elice_regular"
+            android:layout_below="@id/tv_time"
+            android:padding="16dp"
+            android:id="@+id/tv_foundLocation" />
+        <TextView
+            android:id="@+id/tv_location_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:fontFamily="@font/elice_regular"
+            android:layout_toRightOf="@id/tv_foundLocation"
+            android:layout_below="@id/tv_time_detail"/>
+
+        <fragment
+            android:id="@+id/frag_map1"
+            android:name="com.lux.assert_lost_and_found.ListFragment"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/tv_foundLocation"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분실물 위치 : "
+            android:textColor="@color/black"
+            android:fontFamily="@font/elice_regular"
+            android:layout_below="@id/frag_map1"
+            android:padding="16dp"
+            android:id="@+id/tv_productLocation" />
+        <TextView
+            android:id="@+id/tv_prod_location_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:fontFamily="@font/elice_regular"
+            android:layout_toRightOf="@id/tv_productLocation"
+            android:layout_below="@id/frag_map1"/>
+
+        <fragment
+            android:id="@+id/frag_map2"
+            android:name="com.lux.assert_lost_and_found.ListFragment"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/tv_productLocation"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="수령완료"
+            android:textSize="36sp"
+            android:fontFamily="@font/hs"
+            android:background="@drawable/button_blue"
+            android:layout_below="@id/frag_map2"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_received"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

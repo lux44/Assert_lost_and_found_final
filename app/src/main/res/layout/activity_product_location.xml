@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductLocationActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="분실물을 본인이"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소유하고 계신가요?"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/elice_regular"
+        android:text="아니시라면 맡기신 곳의"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위치를 입력해주세요."
+        android:fontFamily="@font/elice_regular"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv3"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btn_edit_location"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/btn_mine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_mint"
+        android:fontFamily="@font/elice_regular"
+        android:text="위치입력"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_mine"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_mint"
+        android:fontFamily="@font/elice_regular"
+        android:text="본인 소유"
+        android:layout_above="@id/btn_back"
+        android:layout_marginBottom="80dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_mint"
+        android:drawableLeft="@drawable/ic_back"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/elice_regular"
+        android:text="뒤로가기"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="다음"
+        android:background="@drawable/button_mint"
+        android:drawableRight="@drawable/ic_next"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/elice_regular"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_next"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

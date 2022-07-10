@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주의!!"
+        android:fontFamily="@font/elice_regular"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_warning2"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/elice_regular"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_warning2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_warning_message"
+        android:text="많은 사람이 볼 수 있는 목록을 작성하는 것이므로 신분이 노출될 수 있을만한 물건(신분증, 운전면허증)의 사진을 올릴 때는 꼭 사진이나 주민번호 뒷자리, 주소 등은 가리고 올려주세요!" />
+
+    <Button
+        android:id="@+id/btn_warning1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_warning_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_green"
+        android:fontFamily="@font/elice_regular"
+        android:text="예"
+        android:textSize="25sp" />
+
+</RelativeLayout>

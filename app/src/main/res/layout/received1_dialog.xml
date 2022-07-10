@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주의"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:fontFamily="@font/elice_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/tv_warning"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="타인의 점유물을 허위로 사칭해서 점유 했을시엔 점유이탈물횡령죄로 처벌 받을 수 있습니다."
+        android:textSize="20sp"
+        android:fontFamily="@font/elice_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_warning"
+        android:id="@+id/tv1_dialog1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수령 완료 처리 하시겠습니까?"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/elice_regular"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv2_dialog1"
+        android:layout_below="@id/tv1_dialog1"/>
+
+    <Button
+        android:id="@+id/btn1_dialog1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2_dialog1"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button_blue"
+        android:text="수령"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn2_dialog1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="수령 안 함"
+        android:textSize="20sp"
+        android:background="@drawable/button_blue"
+        android:layout_below="@id/tv2_dialog1"
+        android:layout_margin="36dp"
+        android:layout_toRightOf="@id/btn1_dialog1"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

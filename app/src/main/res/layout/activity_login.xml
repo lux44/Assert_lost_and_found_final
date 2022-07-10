@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloud"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/btn_login_google"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_google_logo"
+        android:drawablePadding="-24dp"
+        android:fontFamily="@font/roboto"
+        android:text="구글로 시작하기"
+        android:textSize="24sp" />
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:text="카카오로 시작하기"
+        android:textSize="24sp"
+        android:fontFamily="@font/elice_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_kakao_ci_yellow"
+        android:drawablePadding="-24dp"
+        android:layout_below="@id/btn_login_google"
+        android:backgroundTint="@color/white"
+        android:id="@+id/btn_login_kakao"/>
+
+    <Button
+        android:id="@+id/btn_login_naver"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn_login_kakao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/elice_regular"
+        android:drawableLeft="@drawable/ic_naver"
+        android:drawablePadding="-24dp"
+        android:text="네이버로 시작하기"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloud">
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/spinner_background"
+        android:layout_margin="16dp"
+        android:prompt="@string/app_name"
+        android:spinnerMode="dialog"
+        android:id="@+id/spinner_category1"/>
+
+    <Spinner
+        android:id="@+id/spinner_category2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@id/spinner_category1"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dialog"
+        android:visibility="invisible"/>
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/spinner_background"
+        android:layout_margin="16dp"
+        android:id="@+id/spinner_received"
+        android:layout_alignParentRight="true"
+        android:spinnerMode="dialog"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_category1"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:id="@+id/recycler_list"/>
+
+</RelativeLayout>

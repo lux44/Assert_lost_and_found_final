@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Item2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:text="분류 : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_category_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_category"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_category"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:text="제목 : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_category_detail"
+            android:layout_toRightOf="@id/tv_title"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="36dp"
+            android:padding="8dp"
+            android:src="@drawable/button_blue" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="36dp"
+            android:padding="8dp"
+            android:src="@drawable/button_blue" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_1"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:text="발견 시각 : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_time_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_1"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/tv_time"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_foundLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:text="발견 위치 : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time_detail"
+            android:layout_toRightOf="@id/tv_foundLocation"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <fragment
+            android:id="@+id/frag_map1"
+            android:name="com.lux.assert_lost_and_found.ListFragment"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/tv_foundLocation"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_productLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frag_map1"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:text="분실물 위치 : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frag_map1"
+            android:layout_toRightOf="@id/tv_productLocation"
+            android:fontFamily="@font/elice_regular"
+            android:padding="16dp"
+            android:text="습득자 소지"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_received2"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_productLocation"
+            android:layout_margin="36dp"
+            android:background="@drawable/button_blue"
+            android:fontFamily="@font/hs"
+            android:text="수령완료"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_chat"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_productLocation"
+            android:layout_alignParentRight="true"
+            android:layout_margin="36dp"
+            android:background="@drawable/button_blue"
+            android:fontFamily="@font/hs"
+            android:text="채팅하기"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

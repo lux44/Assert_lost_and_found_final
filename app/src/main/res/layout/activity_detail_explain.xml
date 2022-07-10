@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".DetailExplainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추가로 설명할 글이 있으신가요?"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/elice_regular"
+        android:id="@+id/tv1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="있으시다면 적어주세요!"
+        android:textSize="24sp"
+        android:fontFamily="@font/elice_regular"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:layout_below="@id/tv1"
+        android:id="@+id/tv2"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="없으시다면 안 적으셔도 돼요!"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/elice_regular"
+        android:textColor="#aaaaaa"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv2"/>
+
+    <EditText
+        android:id="@+id/et_explain"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv3"
+        android:background="@drawable/edit_background_mint"
+        android:gravity="top"
+        android:hint="ex) 지갑에 돈은 없었습니다."
+        android:maxEms="300"
+        android:padding="16dp" />
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/button_mint"
+        android:text="등록"
+        android:textSize="24sp"
+        android:fontFamily="@font/elice_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_explain"
+        android:layout_margin="30dp"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category2_2">
+        <item>목걸이</item>
+        <item>귀걸이/피어싱</item>
+        <item>팔찌/발찌</item>
+        <item>시계</item>
+        <item>반지</item>
+        <item>안경</item>
+    </string-array>
+</resources>

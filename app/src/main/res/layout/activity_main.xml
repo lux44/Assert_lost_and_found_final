@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloud"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_green"
+        android:text="물건을 주웠어요"
+        android:fontFamily="@font/hs"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:id="@+id/btn_get"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_blue"
+        android:text="물건을 잃어버렸어요"
+        android:fontFamily="@font/hs"
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/btn_get"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_lost"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category2_1">
+        <item>노트북/태블릿 pc</item>
+        <item>헤드셋/(블루투스) 이어폰</item>
+        <item>휴대폰</item>
+        <item>스마트워치</item>
+        <item>USB/허브/외장하드</item>
+        <item>악세서리/주변기기</item>
+    </string-array>
+</resources>

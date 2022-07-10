@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PictureActivity">
+
+    <TextView
+        android:id="@+id/tv_picture_explain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/elice_regular"
+        android:text="습득하신 물건의 사진을 "
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/tv_picture_explain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록해 주세요."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        android:layout_below="@id/tv_picture_explain1"
+        android:fontFamily="@font/elice_regular"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최대 2장"
+        android:textColor="#aaaaaa"
+        android:fontFamily="@font/elice_regular"
+        android:layout_toRightOf="@id/tv_picture_explain2"
+        android:layout_alignBottom="@id/tv_picture_explain2"
+        android:paddingBottom="4dp"/>
+
+    <ImageView
+        android:id="@+id/iv_register_picture"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_picture_explain2"
+        android:layout_marginTop="80dp"
+        android:visibility="visible"
+        android:src="@drawable/pic" />
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/button_mint"
+        android:text="뒤로가기"
+        android:drawableLeft="@drawable/ic_back"
+        android:fontFamily="@font/elice_regular"
+        android:textSize="20sp"
+        android:drawablePadding="-20dp"
+        android:layout_below="@id/iv_register_picture"
+        android:layout_marginTop="56dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="등록"
+        android:background="@drawable/button_mint"
+        android:drawableRight="@drawable/ic_next"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/elice_regular"
+        android:layout_below="@id/iv_register_picture"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="56dp"
+        android:id="@+id/btn_next"
+        android:textSize="20sp"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/iv_picture1"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:visibility="invisible"
+        android:id="@+id/iv_picture2"/>
+
+
+
+</RelativeLayout>

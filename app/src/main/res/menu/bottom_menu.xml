@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bnv_police"
+        android:title="경찰청/지구대"
+        android:icon="@drawable/ic_police"/>
+    <item android:id="@+id/bnv_bus_or_taxi"
+        android:title="대중교통"
+        android:icon="@drawable/ic_taxi" />
+    <item android:id="@+id/bnv_list"
+        android:title="등록목록"
+        android:icon="@drawable/ic_list"/>
+</menu>

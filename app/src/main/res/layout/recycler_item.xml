@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:padding="4dp"
+    app:contentPadding="16dp"
+    app:cardElevation="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시물 제목"
+            android:fontFamily="@font/cafe"
+            android:textSize="24sp"
+            android:id="@+id/tv_item_title"/>
+
+        <TextView
+            android:id="@+id/tv_item_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_item_date"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/cafe"
+            android:text="습득 위치"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시 날짜"
+            android:fontFamily="@font/cafe"
+            android:textSize="8sp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_item_date"/>
+
+        <TextView
+            android:id="@+id/tv_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/cafe"
+            android:text="게시물 번호"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/cafe"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:id="@+id/tv_item_id"/>
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toLeftOf="@id/tv_item_number" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
